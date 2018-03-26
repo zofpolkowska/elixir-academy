@@ -1,6 +1,5 @@
 # FizzBuzz
 
-**TODO: Add description**
 
 ## Installation
 
