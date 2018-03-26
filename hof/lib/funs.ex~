@@ -1,0 +1,5 @@
+defmodule Funs do
+  def fib(n), do: List.first(HOF.repeat([0,1], &fib/2, n))
+  def fin(a, b), do: [b, a+b]
+        
+end

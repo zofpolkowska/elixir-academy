@@ -1,0 +1,18 @@
+defmodule Hof do
+  @moduledoc """
+  Documentation for Hof.
+  """
+
+  @doc """
+  Hello world.
+
+  ## Examples
+
+      iex> Hof.hello
+      :world
+
+  """
+  def hello do
+    :world
+  end
+end

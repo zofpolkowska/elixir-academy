@@ -1,0 +1,13 @@
+defmodule TPK do
+  def read(0), do: []
+  def read(n), do: [read()|read(n-1)]
+
+  def read do
+    IO.gets("Enter an integer: ")    |> String.trim |> String.to_integer
+  end
+    
+
+end
+
+TPK.read(3)
+|> Enum.map(&IO.puts/1)
