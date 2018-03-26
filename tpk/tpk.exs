@@ -27,13 +27,13 @@ defmodule TPK do
 
 end
 
-IO.puts("************one way*************")
-TPK.read(3)
+IO.puts("**************one way***************")
+TPK.read(11)
 |> Enum.map(&TPK.fact/1)
 |> Enum.map(&TPK.toobig?/1)
 |> Enum.map(&IO.puts/1)
 
 IO.puts("************another way*************")
-numbers = TPK.read(3)
+numbers = TPK.read(11)
 filtered = TPK.toobig?(TPK.fact(numbers))
 TPK.print(filtered)
