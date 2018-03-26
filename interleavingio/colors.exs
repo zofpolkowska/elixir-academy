@@ -1,5 +1,5 @@
 ### Examples of interleaving reading and writing IO ###
-
+# about this one I am not sure if its a good example
 # depending on the input from the user the color of text is being changed
 
 
