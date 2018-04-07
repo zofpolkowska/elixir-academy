@@ -1,0 +1,3 @@
+%{
+  "caffeine": {:hex, :caffeine, "1.2.0", "b1e1cbd2b57807c078011e4631a68f33f52a079d6d92065dd8a6ac3027688604", [], [], "hexpm"},
+}

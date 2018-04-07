@@ -1,4 +1,4 @@
-defmodule Generator.LCG do
+defmodule LCG do
   defmodule Parameters do
     defstruct [
       modulus: 9,
@@ -50,23 +50,14 @@ defmodule Generator.LCG do
   end
 
   defmodule MMIX do
-    def stream do
-      x = %Generator.LCG.Parameters{
+    def instance do
+      x = %LCG.Parameters{
         modulus:    round(:math.pow(2, 64)),
         multiplier: 6364136223846793005,
         increment:  1442695040888963407
       }
-      true = Generator.LCG.Parameters.okay?(x)
-      Generator.LCG.instance(x)
-    end
-  end
-
-  defmodule Example do
-    def f do
-      m = Generator.LCG.MMIX.stream()
-      Generator.LCG.stream(1, m)
-      |> Generator.LCG.Lazy.map(&Integer.to_string/1)
-      |> Generator.LCG.Eager.take(12)
+      true = LCG.Parameters.okay?(x)
+      LCG.instance(x)
     end
   end
 end
